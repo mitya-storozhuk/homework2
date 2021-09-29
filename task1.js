@@ -20,15 +20,15 @@ console.log(typeof res4); // "number"
 
 // task2
 const number = promt ("Enter a number", "0");
-const even = 0;
-const multipleSeven = 0;
-if (even === number % 2) {
+if (number % 2 === 0) {
    console.log("number is even"); 
-} else if (multipleSeven === number % 7) {
+} else console.log("number is odd");
+
+if (number % 7 === 0) {
     console.log("number is multiple of seven");
 } else {
     console.log("number is not even and multiple of seven");
-}
+};
 
 // task3
 let arr = [];
