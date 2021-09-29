@@ -95,10 +95,10 @@ switch (true) {
      case (hours >= 23 || hours <= 5):
         console.log("Доброї ночі");
         break;
-    case (hours > 5 || hours < 11):
+    case (hours > 5 && hours < 11):
         console.log("Доброго ранку");
         break;
-    case (hours > 11 || hours < 17):
+    case (hours > 11 && hours < 17):
         console.log("Доброго дня");
         break;
     default:
