@@ -19,7 +19,7 @@ console.log(res4); // NaN
 console.log(typeof res4); // "number"
 
 // task2
-const number = promt ("Enter a number", "0");
+const number = prompt("Enter a number", "0");
 if (number % 2 === 0) {
    console.log("number is even"); 
 } else console.log("number is odd");
@@ -37,7 +37,7 @@ arr[1] = 'hello';
 arr[2] = true;
 arr[3] = null;
 console.log(arr.length);
-const value = promt ("Enter an anything", "0");
+const value = prompt("Enter an anything", "0");
 arr[4] = value;
 console.log(arr[4]);
 const first = arr.shift();
@@ -49,7 +49,7 @@ let newCities = cities.join('*');
 console.log(newCities);
 
 // task5
-const isAdult = promt ("Ви досягли повнолітнього віку?", "0");
+const isAdult = prompt("Ви досягли повнолітнього віку?", "0");
 if (isAdult > 0 && isAdult < 18) {
     console.log ("Ви не досягли повнолітнього віку");
 } else if (isAdult >= 18) {
@@ -57,9 +57,9 @@ if (isAdult > 0 && isAdult < 18) {
 } else console.log ("Ви ввели не коректні данні");
 
 // task6
-const sideA = promt ("Введіть сторону А трикутника", "3");
-const sideB = promt ("Введіть сторону А трикутника", "4");
-const sideC = promt ("Введіть сторону А трикутника", "5");
+const sideA = +prompt("Введіть сторону А трикутника", "3");
+const sideB = +prompt("Введіть сторону А трикутника", "4");
+const sideC = +prompt("Введіть сторону А трикутника", "5");
 const perim = (sideA + sideB + sideC) * (1 / 2);
 const triangleSquare = (perim * (perim - sideA) * (perim - sideB) * (perim - sideC)) ** (1 / 2);
 const triangleSquareRight = sideA * sideB  * (1 / 2);
@@ -67,6 +67,7 @@ const triangleSquareRight = sideA * sideB  * (1 / 2);
 if ( ((sideA + sideB) < sideC) || ((sideA + sideC) < sideB) || ((sideB + sideC) < sideA) || (sideA < 0) || (sideB < 0) || (sideC < 0)) {
     alert("Incorrect data");
 };
+
 if (triangleSquare === triangleSquareRight) {
     console.log("Трикутник є прямокутним");
 };
